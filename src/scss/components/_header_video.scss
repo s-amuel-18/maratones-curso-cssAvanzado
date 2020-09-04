@@ -1,0 +1,30 @@
+.videoHeader {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    &-text {
+        position: absolute;
+        top: 30vh;
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        & > h2{
+            font-size: 6vw;
+            
+        }
+        & > h3{
+            font-weight: normal;
+            font-size: 4vw;
+            
+        }
+        @media screen and (max-width: 64em){
+            top: 40vh;
+
+        }
+    }
+}

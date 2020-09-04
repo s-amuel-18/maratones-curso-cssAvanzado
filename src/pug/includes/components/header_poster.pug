@@ -1,0 +1,7 @@
+mixin headerPoster(image,title,subtitle)
+  article.poster.u-afterFixed(style=`background-image:url(${image});`)
+    .poster--opacity  
+      h2.poster-title
+        span= title
+        br 
+        span= subtitle

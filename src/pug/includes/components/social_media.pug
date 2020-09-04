@@ -1,0 +1,7 @@
+mixin socialMedia(sm)
+  aside.socialMedia
+    ul.socialMedia-list
+      each item in sm
+        li.socialMedia-item
+          a.socialMedia-link(href=`${item[1]}`, target="_blank")
+            i(class=`fa fa-${item[0]}`)

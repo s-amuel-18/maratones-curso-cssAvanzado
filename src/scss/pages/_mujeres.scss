@@ -1,0 +1,133 @@
+.woman {
+    // width: 100vw;
+    display: grid;
+    grid-template: {
+        columns: 100%;
+        rows: repeat(2,auto);
+    };
+}
+
+.collage {
+    width: 100%;
+    min-height: 100vh;
+    // height: 150vh;
+    padding: 2rem;
+    padding-top: $header-height;
+    display: grid;
+    grid-template: {
+        columns: 100%;
+        rows: repeat(7,auto);
+    };
+    line-height: 1.4;
+    color:#fff;
+    background-image: radial-gradient(circle, #19b6ff, #033e5a);
+    
+    &-title {
+        width: 100%;
+        text-align: center;
+        order: 0 ;
+    }
+    &-textTop {
+        order: 1;
+
+    }
+    &-textCenter {
+        order: 3;
+
+    }
+    &-textBottom {
+        order: 5;
+
+    }
+    &-imageTop {
+        order: -1;
+        img {
+            width: 100%;
+        }
+    }
+    &-imageCenter {
+        order: 2;
+        
+        img {
+            width: 100%;
+        }
+    }
+    &-imageBottom {
+        order: 4;
+        img {
+            width: 100%;
+        }
+    }
+    
+    & p {
+        margin: 1rem 0;
+    }
+
+    @media screen and (min-width:64em){
+        grid-template: {
+            columns:repeat(6,1fr);
+            rows:repeat(8,auto);
+        };
+        &-title {
+          grid: {
+              column:1 / 2;
+              row:1 / 9;
+          };
+          text-orientation: upright;
+          writing-mode: vertical-lr;
+          font-size: 6vh;
+          letter-spacing: -1vh;
+        }
+        &-textTop {
+            grid: {
+                column: 2 / 6;
+                row:1 / 3;
+            };
+            
+        }
+        &-textCenter {
+            grid: {
+                column:2 / 4;
+                row:4 / 6;
+            };
+            padding-right: 40px;
+        }
+        &-textBottom {
+            grid: {
+                column:2/6;
+                row:7/9;
+            };
+        }
+        &-imageTop {
+            grid: {
+                column:5/7;
+                row:3/5;
+            };
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &-imageCenter {
+            grid: {
+                column:4/6;
+                row:4/6;
+            };
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+            z-index: 1;
+        }
+        &-imageBottom {
+            grid: {
+                column:5/7;
+                row:5/7;
+            };
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

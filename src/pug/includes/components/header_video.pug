@@ -1,0 +1,6 @@
+mixin headerVideo(url,title,text)
+  article.videoHeader.u-afterFixed
+    .videoHeader-text
+      h2= title
+      h3= text
+    video.videoHeader-video(src=`./img/${url}.mp4`, poster=`./img/${url}.jpg`, muted, loop)

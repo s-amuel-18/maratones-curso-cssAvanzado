@@ -1,0 +1,27 @@
+extends ../includes/layout.pug
+include ../includes/components/header_poster.pug
+include ../includes/components/youtube_video.pug
+block metatags
+  -let title = `Mujer Maravilla - M A R T O N`
+  -let description = `Conoce el origen de la participacion de las mujeres en los maratones  `
+  title= title
+  meta(name="description", content=description)
+  meta(name="application-name", content=title)
+block content
+  main.woman
+    +headerPoster(`./img/mujeres-header.jpg`,`MUJER`, `MARAVILLA`)
+    article.collage.u-firstContent
+      h2.collage-title.u-flexCenter Kathrne Switzer
+      .collage-textTop.u-flexCenter
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vel voluptatem praesentium nam. Saepe sequi vel aliquid rem quia cumque reprehenderit asperiores eius id, officiis veritatis facilis modi omnis at maxime nam harum! Quia distinctio quibusdam voluptatibus ducimus nam repellendus velit unde? Nisi fuga iusto officiis facere nesciunt ad porro, ipsa fugit saepe repellendus quos voluptates iure delectus quasi! Deleniti.
+      .collage-textCenter.u-flexCenter
+        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit officiis architecto ipsam unde mollitia ea nihil perspiciatis ab at accusantium laborum, similique deleniti optio ut cupiditate culpa suscipit perferendis obcaecati cumque, ullam consequatur natus possimus delectus est. Aut recusandae voluptas magni consequatur accusamus magnam maxime doloribus ad. Officiis, iure laudantium aut inventore, laborum itaque totam incidunt assumenda vitae, tempora eaque!
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci repudiandae quaerat vel asperiores fugit magni fuga quos molestiae et laudantium.
+      .collage-textBottom.u-flexCenter
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam in tempore, corrupti alias dolorum eos consequatur vel totam cumque earum quae commodi. Veritatis aliquam iste alias, quia aliquid neque sequi voluptatem saepe obcaecati velit magni modi cupiditate ex pariatur sed.
+      .collage-imageTop
+        img(src="img/mujeres-kathrine-arriba.jpg", alt="")
+      .collage-imageCenter
+        img(src="img/mujeres-kathrine-centro.jpg", alt="")
+      .collage-imageBottom
+        img(src="img/mujeres-kathrine-abajo.jpg", alt="")

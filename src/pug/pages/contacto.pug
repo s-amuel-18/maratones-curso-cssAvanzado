@@ -1,0 +1,22 @@
+extends ../includes/layout.pug
+include ../includes/components/header_video.pug
+include ../includes/components/social_media.pug
+include ../includes/components/contact_form.pug
+block metatags
+  -let title = `contacto - M A R T O N`
+  -let description = `¿te gusta este sitio? dejanos tus comentarios y visita nuestras redes sociales`
+  title= title
+  meta(name="description", content=description)
+  meta(name="application-name", content=title)
+block content
+  main.contact
+    section.contact-video
+      +headerVideo(`contacto-runner`,`¿te gusto este sitio?`,`dejanos tus comentarios y visita nuestras redes sociales`)
+    section.contact-info
+      +contactForm()
+      +socialMedia([[`github`,`https://github.com/s-amuel-18`],[`youtube`,`https://www.youtube.com/channel/UCmJRrfJ7T-Z8B_yH5kMajMg/featured?view_as=subscriber`],[`envelope`,`mailto:samuelgraterol12@gmail.com`],[`twitter`,`https://twitter.com`],[`codepen`,`dsadda`]])
+    section.googleMap
+
+    
+
+  

@@ -1,0 +1,53 @@
+.marathons {
+    display: grid;
+    grid-template: {
+        columns: 1fr;
+        rows:repeat(8,auto);
+    };
+    &-logos {
+        width: 100%;
+
+        display: grid;
+        grid-template: {
+            columns:repeat(6,1fr);
+            rows:2fr;
+        };
+        justify-items: center;
+        background-color: #fff;
+        &Text {
+            padding: 1rem;
+            font-size: 3vw;
+            grid-column: span 6;
+            grid-row: 1 / 2;
+
+            @media screen and (max-width:64em){
+                grid-column: span 2;
+                padding: 1rem;
+                font-size: 1.1rem;
+            }
+        }
+        @media screen and (max-width:1020px){
+            grid-template: {
+                columns:2fr;
+                rows:repeat(4,1fr);
+            };
+        }
+
+        &Item {
+            transition: all .3s ease-in-out;
+            &:hover {
+                background-color: #fff;
+                filter: invert(1);
+            }
+        }
+      
+    }
+    & .poster-title {
+        text-transform: uppercase;
+        & span:last-child{
+            text-transform: lowercase;
+            letter-spacing: 0;
+
+        }
+    }
+}

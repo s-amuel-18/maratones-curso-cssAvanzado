@@ -1,0 +1,70 @@
+extends ../includes/layout.pug
+include ../includes/components/header_poster.pug
+block metatags
+  -let title = `Origenes - M A R T O N`
+  -let description = `En esta seccion te explicamos todo sobre los origenes del maraton `
+  title= title
+  meta(name="description", content=description)
+  meta(name="application-name", content=title)
+block content
+  main.about
+    +headerPoster(`./img/acerca-runners-steps.jpg`,`MARATON`, `42.1985km`)
+    article.marathonHistory
+      .marathonHistory-item.ga1
+        img(src="./img/historia-start.jpg", alt="")
+      .marathonHistory-item.ga1-2
+        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem aspernatur obcaecati accusantium aut voluptatum, repellat ab facere esse assumenda inventore pariatur at explicabo deleniti illo maiores, officia tenetur nemo. Voluptates voluptatibus nihil placeat debitis vel ipsum consequuntur iste necessitatibus, temporibus, aut quis nostrum soluta sit illum? Nesciunt fugiat molestiae incidunt modi, maxime blanditiis iure. Nulla at quis sed deleniti,
+      .marathonHistory-item.ga2-2
+        img(src="./img/historia-1.jpg", alt="")
+      .marathonHistory-item.ga1
+        img(src="./img/historia-2.jpg", alt="")
+      .marathonHistory-item.ga1
+        img(src="./img/historia-3.jpg", alt="")
+      .marathonHistory-item.ga1-3.alignCenter
+        h2 Lorem ipsum dolor sit amet.
+      .marathonHistory-item.ga1
+        img(src="./img/historia-4.jpg", alt="")
+      .marathonHistory-item.ga1-2
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, nisi! Placeat unde maiores quo eius officia alias accusantium adipisci repellat architecto, aliquid harum? Molestias eos, veniam placeat architecto delectus blanditiis voluptas tenetur officia accusamus iure possimus, quibusdam impedit perspiciatis corrupti sapiente culpa provident nobis obcaecati corporis autem. Illo, debitis aut. Illo fuga voluptates officia eligendi aliquid nihil quis alias sunt? Impedit fugit nemo voluptatum error sed repudiandae modi perferendis, facere minima eligendi nostrum obcaecati unde quia ipsum. Fuga neque aspernatur fugiat sapiente ipsa quaerat optio eos rem culpa maiores magni consequatur asperiores doloremque excepturi, perspiciatis, vitae earum, expedita minima beatae iste voluptatum ab. Ex nesciunt animi repellat, earum, ducimus eos, quam aut laudantium perspiciatis cumque amet nobis distinctio architecto eveniet!
+      .marathonHistory-item.ga2
+        p  dolores ipsam laborum quam voluptates, sunt laudantium obcaecati quis nemo delectus quasi repudiandae tempora facere ullam consectetur numquam aspernatur libero dolor asperiores eveniet sint? Totam eius culpa dolorem quia velit maiores nihil ipsa perferendis officia. Quam debitis accusantium itaque.
+      .marathonHistory-item.ga2-2
+        img(src="./img/historia-5.jpg", alt="")
+      .marathonHistory-item.ga2-2
+        p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, corporis. Harum nisi, doloribus aperiam vitae voluptate commodi aspernatur quis itaque corporis ut veniam excepturi debitis est dolorum labore assumenda, repellendus exercitationem incidunt placeat. Quidem sed id qui doloribus, tenetur aspernatur accusantium vitae. Dolor ipsam animi impedit minus ut non qui cupiditate, explicabo consequuntur quaerat ratione est, quod eligendi cumque corrupti error neque rem ab. Tempore quia est incidunt, id totam error eligendi veritatis nihil et laudantium. Soluta, unde minus dolores magni 
+      .marathonHistory-item.ga2
+        img(src="./img/historia-6.jpg", alt="")
+      .marathonHistory-item.ga1-3.alignCenter
+        h2 Lorem ipsum dolor sit amet consectetur.
+      .marathonHistory-item.ga3-3.modificar
+        img(src="./img/historia-7.jpg", alt="")
+      .marathonHistory-item.ga1-3.alignCenter
+        h2 Lorem ipsum dolor sit amet consectetur.
+       
+      .marathonHistory-item.ga2
+        p  neque nam, laborum velit praesentium iste maiores cumque incidunt possimus, quasi sint saepe modi, facilis dignissimos perferendis quaerat quod. Adipisci unde accusamus saepe iure, non sit odit, aspernatur, ipsa molestias delectus totam. Cumque accusantium harum ratione doloremque expedita suscipit fugit.
+      .marathonHistory-item.ga2-2
+        img(src="./img/historia-8.jpg", alt="")
+      .marathonHistory-item.ga1
+        img(src="./img/historia-9.jpg", alt="")
+      .marathonHistory-item.ga1-2
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti laboriosam voluptatum quasi rem aperiam provident culpa cupiditate aut commodi corrupti eius architecto amet quo iure assumenda laborum cumque expedita placeat harum modi, ullam ad eos. Quam magni, hic labore neque nesciunt officiis? Voluptates ipsum nam inventore dicta dolore minima ex!
+      .marathonHistory-item.ga3
+        p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, nisi ipsam dicta nam maiores cupiditate! Dolor ipsum consectetur nesciunt? Mollitia rem reiciendis quos sint maiores exercitationem. Quidem a neque expedita beatae dolor ipsa odio 
+      .marathonHistory-item.ga3-2
+        img(src="./img/historia-10.jpg", alt="")
+      .marathonHistory-item.ga1-2
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur perferendis ut blanditiis ad, velit eos exercitationem aut iure ullam. Eius, nam fugit reprehenderit, laborum consequatur totam doloremque perspiciatis rem ea ut libero dolorem! Officiis rerum explicabo aspernatur aperiam fugit iste, quaerat est modi eligendi vero eum iure numquam amet neque voluptatem molestiae expedita, architecto sed, saepe delectus temporibus deserunt eius? Unde consequuntur accusamus possimus, expedita perspiciatis eos. Iste commodi ut iure praesentium, odit similique expedita enim aperiam, cupiditate, esse eius!
+      .marathonHistory-item.ga1
+        img(src="./img/historia-finish.jpg", alt="")
+    -let imgsWindowGalery = [`./img/acerca-1.jpg`,`./img/acerca-2.jpg`,`./img/acerca-3.jpg`,`./img/acerca-4.jpg`]
+    aside.windowGalery
+      header.windowGalery-title 
+        h2 4 2 . 195<br>k m
+      b.windowGalery-clipPath
+      each img in imgsWindowGalery
+        figure.windowGalery-item
+          img(src= img, alt="").windowGalery-img
+      
+  
+  

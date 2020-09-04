@@ -1,0 +1,20 @@
+extends ../includes/layout.pug
+include ../includes/components/header_poster.pug
+include ../includes/components/sentence.pug
+include ../includes/components/youtube_video.pug
+block metatags
+  -let title = `M A R T O N - 4 2 . 1 9 5 km`
+  -let description = `Bienvenidos, en este mundo encontraras informacion sobre el maravilloso mundo de los Maratones `
+  title= title
+  meta(name="description", content=description)
+  meta(name="application-name", content=title)
+block content
+  main.home
+    +headerPoster(`./img/home-lady-runner.jpg`,`Si entrenas tu mente para correr, `, `todo lo demas sera facil`)
+    +sentence(`Correr es una forma de decirle a mi cuerpo`,`que lo quiero.`,`Anonimo`)
+    +youtubeVideo(`o00Mzo6Ylmc`)
+    +sentence(`Correr es una forma de decirle a mi cuerpo`,`que lo quiero.`,`Anonimo`)
+    +youtubeVideo(`wODtcFQ_nqU`)
+    +sentence(`Correr es una forma de decirle a mi cuerpo`,`que lo quiero.`,`Anonimo`)
+    +youtubeVideo(`qWcubBYedi4`)
+  

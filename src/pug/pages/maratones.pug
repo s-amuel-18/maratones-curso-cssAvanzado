@@ -1,0 +1,57 @@
+extends ../includes/layout.pug
+include ../includes/components/header_poster.pug
+block metatags
+  -let title = `Los 6 Mayores - M A R T O N`
+  -let description = `En esta seccion te mostrare los 6 maratones mas importantes del mundo`
+  -let logos = ["maratones-berlin-logo.png","maratones-boston-logo.jpg","maratones-chicago-logo.png","maratones-tokyo-logo.png","maratones-london-logo.jpg","maratones-new-york-logo.jpg"]
+  -let small = "<small>"
+  -let smallC = "</small>"
+  title= title
+  meta(name="description", content=description)
+  meta(name="application-name", content=title)
+block content
+  main.marathons
+    +headerPoster(`./img/maratones-abbott-medal.jpg`,`ABBOTT worl`, `Marathons Majors`)
+    article.marathons-logos
+      .marathons-logosText
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, ea. Sunt sed, architecto tempore labore consectetur fugiat eaque atque ipsa! Repellendus consectetur cupiditate in velit perspiciatis impedit delectus consequatur? Tempora voluptate quas itaque voluptatem doloremque! Totam, quisquam minima quibusdam, aut aperiam facilis at illum praesentium velit cum assumenda quaerat esse.
+      each logo in logos 
+        .marathons-logosItem
+          a.marathons-logosLink(href="#", target="_blank")
+            img.marathons-logosImg(src="img/" + logo , alt="")
+    +headerPoster(
+      `./img/maratones-tokyo-panorama.jpg`,
+      `Tokyo`,
+      ` desde 2007 se corre el ultimo domingo de febrero `
+    )
+    +headerPoster(
+      `./img/maratones-berlin-panorama.jpg`,
+      `berlin`,
+      ` desde 2007 se corre el ultimo domingo de febrero `
+    )
+    +headerPoster(
+      `./img/maratones-boston-panorama.jpg`,
+      `boston`,
+      ` desde 2007 se corre el ultimo domingo de febrero `
+    )
+    +headerPoster(
+      `./img/maratones-chicago-panorama.jpg`,
+      `chicago`,
+      ` desde 2007 se corre el ultimo domingo de febrero `
+    )
+    +headerPoster(
+      `./img/maratones-london-panorama.jpg`,
+      `london`,
+      ` desde 2007 se corre el ultimo domingo de febrero `
+    )
+    +headerPoster(
+      `./img/maratones-new-york-panorama.jpg`,
+      `new-york`,
+      ` desde 2007 se corre el ultimo domingo de febrero `
+    )
+
+    
+   
+
+
+

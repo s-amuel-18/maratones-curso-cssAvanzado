@@ -1,0 +1,11 @@
+.home {
+    display: grid;
+    grid-template: {
+        columns: 1fr;
+        rows: repeat(8, auto);
+    };
+
+    & .poster-title{
+        letter-spacing: 0;
+    }
+}

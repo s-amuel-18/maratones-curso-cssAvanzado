@@ -1,0 +1,22 @@
+.socialMedia {
+    padding: 20px 0;
+    &-list {
+        display: flex;
+        justify-content: center;
+    }
+
+    &-item {
+        list-style-type: none;
+         margin: 0 10px;
+        @media screen and (min-width:64em){margin: 0 20px}
+    }
+    &-link {
+        font-size: 12vw;
+        color: #fff;
+
+        &:hover {color:#0096d9;}
+        @media screen and (min-width:64em){font-size: 5vw;}
+    }
+
+    
+}
