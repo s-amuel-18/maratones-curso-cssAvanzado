@@ -2,13 +2,14 @@
     width: inherit;
     height: inherit;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.472);
+    background-color: rgb(107, 107, 107);
 
     @media screen and (min-width:64em){display: flex;}
 
     & a {
         display: inline-block;
         padding: 1rem 0;
+        text-decoration: none;
         font: {
             size:7.5vw;
             weight:bold;

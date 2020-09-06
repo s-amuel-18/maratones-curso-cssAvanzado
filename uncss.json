@@ -5,7 +5,15 @@
   	".Youtube-wrapper",
   	".Youtube iframe",
   	".Youtube a",
-  	".App a"
+  	".header.is-active",
+  	".panel.is-active",
+  	".hamburger--spring.is-active .hamburger-inner",
+  	".hamburger--spring.is-active .hamburger-inner::before",
+  	".hamburger--spring.is-active .hamburger-inner::after",
+  	".googleMap",
+  	".googleMap a",
+  	".googleMap a:hover",
+  	".googleMap iframe"
   ],
   "ignoreSheets": []
 }

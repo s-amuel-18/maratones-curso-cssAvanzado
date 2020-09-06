@@ -1,0 +1,11 @@
+extends ../includes/layout.pug
+include ../includes/components/header_poster.pug
+block metatags
+  -let title = `Error 404 - M A R T O N`
+  -let description = `¿km 404? parece que te has perdido`
+  title= title
+  meta(name="description", content=description)
+  meta(name="application-name", content=title)
+block content
+  main.error
+    +headerPoster(`./img/error-404.jpg`,`¿km 404?, `, `parece que te has perdido`)
